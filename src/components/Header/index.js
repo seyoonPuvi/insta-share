@@ -104,7 +104,6 @@ class Header extends Component {
               type="button"
               className="search-btn"
               onClick={fetchSearchedPost}
-              testid="searchIcon"
             >
               <FaSearch className="search-icon" />
             </button>
@@ -154,7 +153,6 @@ class Header extends Component {
                         type="button"
                         className="search-btn"
                         onClick={fetchSearchedPost}
-                        testid="searchIcon"
                       >
                         <FaSearch className="search-icon" />
                       </button>

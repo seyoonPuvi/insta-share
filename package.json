@@ -1,7 +1,8 @@
 {
   "name": "insta-share",
-  "private": true,
   "version": "1.0.0",
+  "homepage": "https://seyoonPuvi.github.io/insta-share",
+  "private": true,
   "engines": {
     "node": "^10.13 || 12 || 14 || 15",
     "npm": ">=6"
@@ -26,6 +27,7 @@
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-prettier": "3.3.1",
+    "gh-pages": "6.1.1",
     "husky": "4.3.8",
     "lint-staged": "10.5.4",
     "npm-run-all": "4.1.5",
@@ -36,6 +38,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
     "format": "prettier --write \"./src\"",

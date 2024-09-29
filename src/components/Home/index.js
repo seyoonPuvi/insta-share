@@ -225,9 +225,9 @@ class Home extends Component {
                     onClick={() => this.onClickLikeIcon(each.postId)}
                   >
                     {each.isLiked ? (
-                      <FcLike className="like-icon" testid="unLikeIcon" />
+                      <FcLike className="like-icon" />
                     ) : (
-                      <BsHeart className="like-icon" testid="likeIcon" />
+                      <BsHeart className="like-icon" />
                     )}
                   </button>
                   <button type="button" className="like-share-comment-btn">
