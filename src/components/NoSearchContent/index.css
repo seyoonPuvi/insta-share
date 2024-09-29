@@ -1,0 +1,30 @@
+.no-search-cont {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-search-heading {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  color: #262626;
+}
+
+.no-search-desc {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #989898;
+}
+
+.no-search-img {
+  width: 258px;
+  height: 210px;
+}

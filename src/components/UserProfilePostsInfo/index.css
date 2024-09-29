@@ -1,0 +1,28 @@
+.user-posts-cont {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.post-icon-cont {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.post-grid-icon {
+  width: 26px;
+  height: 24px;
+  padding: 3px 4.13px 4.13px 3px;
+  gap: 0px;
+  opacity: 0px;
+  color: black;
+}
+
+.post-heading {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  color: #262626;
+}

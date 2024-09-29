@@ -1,0 +1,31 @@
+.empty-search-screen-cont {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: contain;
+  object-position: center;
+
+  @media (max-width: 768px) {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+.empty-search-heading {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 32px;
+  color: #989898;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}

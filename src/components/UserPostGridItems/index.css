@@ -1,0 +1,37 @@
+.user-posts-grid-cont {
+  padding-inline-start: 0;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem 1.5rem;
+
+  @media (max-width: 500px) {
+    padding: 0 2rem;
+  }
+}
+
+.grid-image-list {
+  height: 330px;
+  width: 330px;
+
+  @media (max-width: 600px) {
+    height: 118px;
+    width: 118px;
+  }
+
+  @media (min-width: 600px) and (max-width: 768px) {
+    height: 180px;
+    width: 180px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.grid-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}

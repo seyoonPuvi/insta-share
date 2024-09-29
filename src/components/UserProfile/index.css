@@ -1,0 +1,65 @@
+.user-profile-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  min-height: 100vh;
+  padding: 3rem 0;
+}
+
+.user-profile-main-cont {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    width: 90% !important;
+  }
+}
+
+/* failure view */
+
+.failure-cont {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.failure-img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.failure-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+
+  text-align: left;
+}
+
+.retry-btn {
+  width: Hug (102px) px;
+  height: Hug (32px) px;
+  padding: 8px 24px 8px 24px;
+  border-radius: 8px;
+  opacity: 0px;
+
+  background: #4094ef;
+  color: white;
+}
+
+/* loading-cont */
+
+.loading-cont {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
