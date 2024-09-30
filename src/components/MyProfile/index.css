@@ -12,16 +12,21 @@
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
-  @media (min-width: 500px) and (max-width: 768px) {
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .my-profile-main-cont {
     width: 95%;
   }
-  @media (max-width: 500px) {
+}
+
+@media (max-width: 500px) {
+  .my-profile-main-cont {
     width: 100%;
   }
 }
 
-/* failure view */
-
+/* Failure View */
 .failure-cont {
   height: 100vh;
   display: flex;
@@ -42,23 +47,19 @@
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
-
   text-align: left;
 }
 
 .retry-btn {
-  width: Hug (102px) px;
-  height: Hug (32px) px;
-  padding: 8px 24px 8px 24px;
+  width: 102px; /* Changed from Hug (102px) */
+  height: 32px; /* Changed from Hug (32px) */
+  padding: 8px 24px;
   border-radius: 8px;
-  opacity: 0px;
-
   background: #4094ef;
   color: white;
 }
 
-/* loading-cont */
-
+/* Loading Container */
 .loading-cont {
   height: 100vh;
   display: flex;

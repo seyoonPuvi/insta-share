@@ -12,8 +12,10 @@
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .user-profile-main-cont {
     width: 90% !important;
   }
 }
@@ -40,17 +42,14 @@
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
-
   text-align: left;
 }
 
 .retry-btn {
-  width: Hug (102px) px;
-  height: Hug (32px) px;
-  padding: 8px 24px 8px 24px;
+  width: 102px; /* Set specific width */
+  height: 32px; /* Set specific height */
+  padding: 8px 24px;
   border-radius: 8px;
-  opacity: 0px;
-
   background: #4094ef;
   color: white;
 }

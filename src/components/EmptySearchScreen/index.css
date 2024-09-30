@@ -11,11 +11,6 @@
   width: 15rem;
   object-fit: contain;
   object-position: center;
-
-  @media (max-width: 768px) {
-    height: 10rem;
-    width: 10rem;
-  }
 }
 
 .empty-search-heading {
@@ -24,8 +19,16 @@
   font-size: 32px;
   color: #989898;
   text-align: center;
+}
 
-  @media (max-width: 768px) {
+/* Media queries should be defined outside of the main selectors */
+@media (max-width: 768px) {
+  .search-img {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .empty-search-heading {
     font-size: 20px;
   }
 }

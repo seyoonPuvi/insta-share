@@ -60,15 +60,9 @@ const SearchedView = () => (
                       onClick={() => onClickSearchPostLike(each.postId)}
                     >
                       {each.isLiked ? (
-                        <FcLike
-                          className="searched-like-icon"
-                          testid="unLikeIcon"
-                        />
+                        <FcLike className="searched-like-icon" />
                       ) : (
-                        <BsHeart
-                          className="searched-like-icon"
-                          testid="likeIcon"
-                        />
+                        <BsHeart className="searched-like-icon" />
                       )}
                     </button>
                     <button
@@ -98,14 +92,14 @@ const SearchedView = () => (
                         className="searched-comment-list"
                         key={eachComments.userId}
                       >
-                        <div className="comment-cont">
-                          <span className="searched-commented-user-name">
-                            {eachComments.userName}
-                          </span>
+                        <li className="comment-list" key={eachComments.userId}>
                           <p className="searched-comment">
+                            <span className="searched-commented-user-name">
+                              {eachComments.userName}
+                            </span>{' '}
                             {eachComments.comment}
                           </p>
-                        </div>
+                        </li>
                       </li>
                     ))}
                   </ul>
@@ -138,7 +132,7 @@ const SearchedView = () => (
       )
 
       const onRenderLoading = () => (
-        <div className="searched-cont-loading" testid="loader">
+        <div className="searched-cont-loading">
           <Loading />
         </div>
       )

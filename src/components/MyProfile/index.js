@@ -162,11 +162,7 @@ class MyProfile extends Component {
                 searchedDataStatus !== 'IN_PROGRESS' && (
                   <div className="my-profile-cont">
                     <div className="my-profile-main-cont">
-                      {showSearchedContent ? (
-                        <SearchedView />
-                      ) : (
-                        this.onRenderApiViews()
-                      )}
+                      {this.onRenderApiViews()}
                     </div>
                   </div>
                 )}

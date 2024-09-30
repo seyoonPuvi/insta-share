@@ -1,11 +1,13 @@
 .user-profile-story-info-cont {
-  padding-inline-start: 0;
+  padding-left: 0; /* Changed from padding-inline-start to padding-left */
   display: flex;
   align-items: center;
   column-gap: 1.5rem;
+}
 
-  @media (max-width: 500px) {
-    padding-left: 1rem;
+@media (max-width: 500px) {
+  .user-profile-story-info-cont {
+    padding-left: 1rem; /* Added media query for padding */
   }
 }
 
@@ -28,7 +30,7 @@
 
 /* horizontal-line */
 
-.horiontal-line {
+.horizontal-line {
   width: 100%;
   border: 0.5px solid #c6c6c8;
 }

@@ -225,9 +225,9 @@ class Home extends Component {
                     onClick={() => this.onClickLikeIcon(each.postId)}
                   >
                     {each.isLiked ? (
-                      <FcLike className="like-icon" testid="unLikeIcon" />
+                      <FcLike className="like-icon" />
                     ) : (
-                      <BsHeart className="like-icon" testid="likeIcon" />
+                      <BsHeart className="like-icon" />
                     )}
                   </button>
                   <button type="button" className="like-share-comment-btn">
@@ -244,14 +244,12 @@ class Home extends Component {
                 <ul className="comment-list-cont">
                   {each.comments.map(eachComments => (
                     <li className="comment-list" key={eachComments.userId}>
-                      <div className="comment-cont">
+                      <p className="searched-comment">
                         <span className="searched-commented-user-name">
                           {eachComments.userName}
-                        </span>
-                        <p className="searched-comment">
-                          {eachComments.comment}
-                        </p>
-                      </div>
+                        </span>{' '}
+                        {eachComments.comment}
+                      </p>
                     </li>
                   ))}
                 </ul>

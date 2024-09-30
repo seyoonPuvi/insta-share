@@ -28,6 +28,17 @@ class UserProfile extends Component {
     this.fetchUserProfileData()
   }
 
+  componentDidUpdate(prevProps) {
+    const {match} = this.props
+    const {params} = match
+    const {id} = params
+
+    // Check if the current ID in the URL is different from the previous one
+    if (prevProps.match.params.id !== id) {
+      this.fetchUserProfileData(id)
+    }
+  }
+
   onSuccessUserProfileDataFetch = data => {
     const formattedUserDetails = {
       id: data.id,
@@ -54,14 +65,18 @@ class UserProfile extends Component {
     })
   }
 
-  fetchUserProfileData = async () => {
+  fetchUserProfileData = async updatedId => {
     this.setState({apiStatus: apiStatusConstants.inProgress})
+
     const {match} = this.props
     const {params} = match
     const {id} = params
     console.log(`id:${id}`)
+
+    const activeId = updatedId || id
+
     const jwtToken = Cookies.get('jwt_token')
-    const apiUrl = `https://apis.ccbp.in/insta-share/users/${id}`
+    const apiUrl = `https://apis.ccbp.in/insta-share/users/${activeId}`
     const option = {
       method: 'GET',
       headers: {
@@ -170,11 +185,7 @@ class UserProfile extends Component {
                 searchedDataStatus !== 'IN_PROGRESS' && (
                   <div className="user-profile-cont">
                     <div className="user-profile-main-cont">
-                      {showSearchedContent ? (
-                        <SearchedView />
-                      ) : (
-                        this.onRenderApiViews()
-                      )}
+                      {this.onRenderApiViews()}
                     </div>
                   </div>
                 )}

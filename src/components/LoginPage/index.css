@@ -10,12 +10,17 @@
 .left-cont {
   width: 582px;
   height: 373px;
-  @media (min-width: 768px) and (max-width: 1200px) {
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .left-cont {
     width: 350px;
     height: 250px;
   }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .left-cont {
     display: none;
   }
 }
@@ -36,12 +41,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
 
-  @media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 900px) {
+  .right-cont {
     width: 380px;
     height: 400px;
   }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .right-cont {
     box-shadow: none;
     width: 100%;
   }
@@ -74,8 +84,10 @@
   flex-direction: column;
   row-gap: 2rem;
   align-self: center;
+}
 
-  @media (max-width: 400px) {
+@media (max-width: 400px) {
+  .form-cont {
     align-items: center;
   }
 }
@@ -86,8 +98,10 @@
   row-gap: 0.5rem;
   width: 360px;
   height: 64px;
+}
 
-  @media (max-width: 400px) {
+@media (max-width: 400px) {
+  .input-cont {
     width: 300px;
   }
 }
@@ -125,9 +139,11 @@
   height: 40px;
   gap: 0px;
   border-radius: 8px;
-  opacity: 0px;
   color: white;
-  @media (max-width: 400px) {
+}
+
+@media (max-width: 400px) {
+  .login-btn {
     width: 300px;
   }
 }

@@ -17,7 +17,7 @@ const UserProfileStoryInfo = props => {
             </li>
           ))}
         </ul>
-        <hr className="horiontal-line" />
+        <hr className="horizontal-line" />
       </>
     )
   }
